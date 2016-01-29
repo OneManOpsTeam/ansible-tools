@@ -31,9 +31,6 @@ install_role() {
   fi
 }
 
-#}}}
-#{{{ Command line parsing
-
 if [ "$#" -lt "1" ]; then
     echo "Expected at least 1 argument, got $#" >&2
     usage
@@ -53,9 +50,6 @@ if [ -d "${project}" ]; then
 fi
 
 shift
-
-#}}}
-# Script proper
 
 wget https://github.com/bertvv/ansible-skeleton/archive/master.zip
 unzip master.zip
