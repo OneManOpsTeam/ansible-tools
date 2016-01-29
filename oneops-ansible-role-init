@@ -9,7 +9,7 @@ set -u # abort on unbound variable
 
 usage() {
 cat << _EOF_
-Usage: ${0} role_name
+Usage: ${0##*/} role_name
   Initialises a new Ansible role project based on
   https://github.com/bertvv/ansible-skeleton
 _EOF_
