@@ -1,16 +1,11 @@
-#! /usr/bin/bash
+#!/usr/bin/env bash
 #
 # Author:   Bert Van Vreckem <bert.vanvreckem@gmail.com>
 #
-# Initialise an Ansible project, based on 
+# Initialise an Ansible project, based on
 # https://github.com/bertvv/ansible-skeleton/
 
 set -u # abort on unbound variable
-
-#{{{ Variables
-
-#}}}
-#{{{ Functions
 
 usage() {
 cat << _EOF_
@@ -75,4 +70,3 @@ git commit --message "Initial commit, Ansible skeleton"
 for role in "${@}"; do
   install_role "${role}"
 done
-
