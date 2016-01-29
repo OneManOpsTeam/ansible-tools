@@ -59,7 +59,7 @@ mv ansible-skeleton-master "${project}"
 git init "${project}"
 cd "${project}"
 git add .
-git commit --message "Initial commit, Ansible skeleton"
+git commit --message "Initial commit"
 
 for role in "${@}"; do
   install_role "${role}"
